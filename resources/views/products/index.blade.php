@@ -9,11 +9,5 @@
 <body>
     <h1>Products</h1>
     <a href="{{ route('products')}}">Products</a>
-    {{-- @foreach ($data as $item)
-        <p>
-            {{$item}}
-        </p>
-    {{-- <p>{{ $title }}</p> --}}
-    {{-- <p>{{$description}}</p> --}}
 </body>
 </html>

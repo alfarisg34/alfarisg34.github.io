@@ -16,47 +16,10 @@ use App\Http\Controllers\ProductsController;
 
 
 Route::get('/products',
-    [ProductsController::class,'index'])->name('products');
+    [ProductsController::class,'index']);
 
-//pattern is integer
-// Route::get('/products/{id}',
-// [ProductsController::class,'show'])->where('id','[0-9]+');
 
-//pattern is string
-// Route::get('/products/{name}',
-// [ProductsController::class,'show'])->where('name','[a-zA-Z]+');
-
-//pattern is both
-// Route::get('/products/{name}/{id}',
-// [ProductsController::class,'show'])->where([
-//     'name'=>'[a-z]+',
-//     'id'=> '[0-9]'
-// ]);
-
-// Route::get('/products/about',[ProductsController::class,'about']);
-
-// Route::get('products','App\Http\Controllers\ProductsController@index');
-
-Route::get('/', function () {
-    return view('home');
-});
-
-// Route::get('/users',function () {
-//     return 'welcome to the users page';
+// Route::get('/', function () {
+//     return view('home');
 // });
 
-// Route::get('/users',function () {
-//     return ['PHP','HTML','Laravel'];
-// });
-
-// Route::get('/users',function () {
-//     return response()->json([
-//         'name'=> 'Alfari',
-//         'course' => 'Laravel Beginner'
-//     ]);
-// });
-
-
-// Route::get('/users',function(){
-//     return redirect('/');
-// });
