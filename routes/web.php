@@ -27,19 +27,19 @@ Route::get('/products',
 // [ProductsController::class,'show'])->where('name','[a-zA-Z]+');
 
 //pattern is both
-Route::get('/products/{name}/{id}',
-[ProductsController::class,'show'])->where([
-    'name'=>'[a-z]+',
-    'id'=> '[0-9]'
-]);
+// Route::get('/products/{name}/{id}',
+// [ProductsController::class,'show'])->where([
+//     'name'=>'[a-z]+',
+//     'id'=> '[0-9]'
+// ]);
 
 // Route::get('/products/about',[ProductsController::class,'about']);
 
 // Route::get('products','App\Http\Controllers\ProductsController@index');
 
-// Route::get('/', function () {
-//     return view('home');
-// });
+Route::get('/', function () {
+    return view('home');
+});
 
 // Route::get('/users',function () {
 //     return 'welcome to the users page';
